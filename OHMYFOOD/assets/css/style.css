@@ -1,0 +1,31 @@
+/*______IMPORTATION FONTS_______*/
+
+@font-face{
+    font-family: "Shrikhand";
+    src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf");
+}
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+/*________COULEURS SITES________*/
+:root {
+    --color-main :#9356DC;
+    --color-second :#FF79DA;
+    --color-third :#99E2D0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+
+
+img{
+    width: 200px;
+}
