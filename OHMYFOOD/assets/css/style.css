@@ -54,7 +54,8 @@
 /*____HEADER____*/
 
 header{
-    display: flex;    
+    display: flex;
+    align-items: center;   
     padding-bottom: 10px;
     padding-top: 20px;
     margin-bottom: 0.2em;                         
@@ -62,7 +63,8 @@ header{
 
 .header-side {
     width: 25%;
-    display: flex;     
+    display: flex; 
+    align-items: center;
 }
 
 .header-center{
@@ -71,12 +73,12 @@ header{
     justify-content: center;
 }
 
-.header-logo{    
+.header-logo{     
     height: 30px;
+    
 }
 
-.header-arrow{
-    margin-top: 10px;
+.header-arrow{       
     margin-left: 23px;
     font-size: 20px;    
 }
@@ -102,8 +104,7 @@ header{
     align-items: center;
     text-align: center;
     padding:30px;
-    gap:10px;
-    
+    gap:10px;    
 }
 .section-reserve-button{
     color: white;   
@@ -112,23 +113,80 @@ header{
     border-radius: 25px;
     margin: 15px 0px;      
 }
+.section-reserve-button:hover{
+    opacity: 90%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
 
 /*______Section How To________*/
 
-.section-how-to{
+.section-how-to {
     display: flex;
     flex-direction: column;
-    padding:50px 4%;
-    gap: 26px;
+    padding: 4%;
     width: 92%;
+    gap: 26px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.section-how-to-container{
+.section-how-to-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:25px;
+    gap : 25px;
+    width: 100%;
 }
+
+.how-to-button {
+    padding: 20px 0px;
+    width: 96%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap : 2%;
+    background: #f7f7f7;
+}
+
+.how-to-number {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 11px;
+    background: var(--color-main);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: white;
+    font-size: 14px;    
+}
+.how-to-button:hover {
+    background: #F5EDFF;
+}
+
+.how-to-button:hover .how-to-logo{
+    color: #9356DC;
+}
+
+.how-to-position{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap:5%;    
+}
+
+.how-to-logo {
+    color: #7e7e7e;
+}
+
+
+.how-to-txt {
+    width: 100%;
+    align-self: center;
+}
+
 /*______Section Restaurant______*/
 
 .section-restaurant{
@@ -214,4 +272,122 @@ footer{
     display: flex;
     flex-direction: column;
     gap:7px;
+}
+
+/*__________Pages Menus__________*/
+
+.menu-img{    
+    margin-top: -0.2em;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.section-menu{
+    padding:35px 4%;    
+    width: 92%;
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 50px;
+    border-radius: 40px 40px 0 0;
+    margin-bottom: -50px;
+    gap:35px; 
+}
+
+.section-menu-container-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-menu-title{
+    font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+    font-style: italic;    
+    font-size: 28px;
+    line-height: 41px;
+}
+
+.section-menu-heart{
+    font-size: 22px;    
+}
+
+.section-meal{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section-meal-title{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+}
+
+.section-meal-title-border{
+    width: 40px;
+    height: 3px;
+    background-color: #99e2d0;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+.section-meal-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.meal-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 10px;
+    max-height: 68px;    
+}
+
+.meal-card-name{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.meal-card-txt{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    max-width: 80%;
+}
+
+.meal-card-description{    
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.meal-card-price{
+    align-self: flex-end;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.section-menu-button{
+    color: white;   
+    padding:15px 20px;    
+    background: linear-gradient(-8deg, #9356DC -5.2%, #FF79DA 110.74%);
+    border-radius: 25px;
+    margin: 15px 0px; 
+    width: 187px;    
+    align-self: center;
+    text-align: center;     
+}
+.section-menu-button:hover{
+    opacity: 90%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
