@@ -48,7 +48,7 @@ h1, h2{
     line-height: 1.625em;
 }
 
-h3 {    
+h3 {
     font-size: 1.125em;
     line-height: 1.313em;
 }
@@ -137,7 +137,7 @@ header {
             margin-bottom: 1.5em;
         }        
     }
-
+    
 @media screen and (max-width:768px){
     nav {
         width: 100%;

@@ -4,15 +4,24 @@
     font-family: "Shrikhand";
     src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
+
 @font-face{
     font-family: "Roboto";
     src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
+
 /*________COULEURS SITES________*/
+
 :root {
     --color-main :#9356DC;
     --color-second :#FF79DA;
     --color-third :#99E2D0;
+    --color-white: #fff;
+    --color-fourth:#353535;
+    --color-background-main:#f6f6f6;
+    --color-hover-how-to-button:#f5edff;
+    --color-icon-how-to-button:#7e7e7e;
+    --color-badge-new:#008766;
 }
 
 *{
@@ -25,31 +34,54 @@
 }
 
 .color-white{
-    color: white;
+    color: var(--color-white);
 }
 
 /*_____BOX SHADOW______*/
+
 .box-shadow-header{    
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 .box-shadow-how-to{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
+
 .box-shadow-button{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
+
 .box-shadow-card{
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /*______BORDER RADIUS_____*/
+
 .border-radius-all{
     border-radius: 15px;
 }
+
 .border-radius-top{
     border-radius:15px 15px 0 0;
 }
 
+/*_______BUTTON________*/
+
+.button-main{    
+    font-weight: 500;   
+    padding:15px 20px;    
+    background: linear-gradient(-8deg, var(--color-main) -5.2%, var(--color-second) 110.74%);
+    border-radius: 25px;
+    margin: 15px 0px; 
+    width: 187px;    
+    align-self: center;
+    text-align: center;     
+}
+
+.button-main:hover{
+    opacity: 90%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
 
 /*____HEADER____*/
 
@@ -74,13 +106,12 @@ header{
 }
 
 .header-logo{     
-    height: 30px;
-    
+    height: 30px;    
 }
 
 .header-arrow{       
     margin-left: 23px;
-    font-size: 20px;    
+    font-size: 20px;        
 }
 
 /*______Section Location________*/
@@ -94,18 +125,22 @@ header{
     background-color: #eaeaea;
     height: 40px;
 }
-@media screen and (min-width:769px) {
-    .section-location{
-        padding-right: 0px;
-        gap:10px;
+    @media screen and (min-width:769px) {
+        .section-location{
+            padding-right: 0px;
+            gap:10px;
+        }            
     }
-        
+
+.section-location-txt{
+    font-weight: 500;
+    color: var(--color-fourth);
 }
 
 /*_____Section Reserve_____*/
 
 .section-reserve{
-    background-color: #f6f6f6;
+    background-color: var(--color-background-main);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,18 +148,20 @@ header{
     padding:30px;
     gap:10px;    
 }
-.section-reserve-button{
-    color: white;   
-    padding:15px 20px;    
-    background: linear-gradient(-8deg, #9356DC -5.2%, #FF79DA 110.74%);
-    border-radius: 25px;
-    margin: 15px 0px;      
-}
-.section-reserve-button:hover{
-    opacity: 90%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+
+@media screen and(min-width:768px) {    
+    .section-reserve-title{ 
+        font-size: 40px;
+        line-height: 47px;      
+    }
 }
 
+.section-reserve-txt{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--color-fourth);
+}
 
 /*______Section How To________*/
 
@@ -151,12 +188,11 @@ header{
     gap : 25px;
     width: 100%;
 }
-@media screen and (min-width:769px) {
-    .section-how-to-container {
-        flex-direction: row;       
+    @media screen and (min-width:769px) {
+        .section-how-to-container {
+            flex-direction: row;       
+        }            
     }
-        
-}
 
 .how-to-button {
     padding: 20px 0px;
@@ -165,7 +201,7 @@ header{
     display: flex;
     align-items: center;
     gap : 2%;
-    background: #f7f7f7;
+    background: var(--color-background-main);
 }
 
 .how-to-number {
@@ -177,16 +213,16 @@ header{
     background: var(--color-main);
     width: 24px;
     height: 24px;
-    border-radius: 50%;
-    color: white;
+    border-radius: 50%;    
     font-size: 14px;    
 }
+
 .how-to-button:hover {
-    background: #F5EDFF;
+    background: var(--color-hover-how-to-button);
 }
 
 .how-to-button:hover .how-to-logo{
-    color: #9356DC;
+    color: var(--color-main);
 }
 
 .how-to-position{
@@ -197,25 +233,26 @@ header{
 }
 
 .how-to-logo {
-    color: #7e7e7e;
+    color: var(--color-icon-how-to-button);
 }
-
 
 .how-to-txt {
     width: 100%;
     align-self: center;
+    font-weight: 500;
 }
 
 /*______Section Restaurant______*/
+
 .section-restaurant-background{
-    background:#f6f6f6;
+    background:var(--color-background-main);
 }
 
 .section-restaurant{
     display: flex;
     flex-direction: column;    
     padding:50px 4%;
-    background-color: #f6f6f6;
+    background-color: var(--color-background-main);
     width: 92%;    
 }
     @media screen and (min-width:768px) {
@@ -223,19 +260,21 @@ header{
             overflow: scroll;
         }
     }
+
 .section-restaurant-title{
     width: 92%;
     padding: 4%;
     padding-bottom: 0;
 }
-@media screen and (min-width:768px) {
-    .section-restaurant-title{
-        max-width: 1200px;
-        margin: auto;
-        margin-bottom: -20px;
-        padding-top: 40px;                              
-    }        
-}
+    @media screen and (min-width:768px) {
+        .section-restaurant-title{
+            max-width: 1200px;
+            margin: auto;
+            margin-bottom: -20px;
+            padding-top: 40px;                              
+        }        
+    }
+
 .restaurant-container-card{
     display: flex;
     flex-direction: column;    
@@ -249,6 +288,7 @@ header{
             padding-bottom: 20px;            
         }                
     }
+
 .restaurant-card{
     height: 251px;
     width: 100%;
@@ -258,6 +298,7 @@ header{
             min-width: 335px;
         }
     }
+
 .restaurant-card-article{
     height: 100%;    
 }
@@ -276,10 +317,9 @@ header{
     margin-right: 5%;     
     width: 60px;       
     font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
+    font-weight: 500;    
     background-color: var(--color-third) ;
-    color:#008766;
+    color:var(--color-badge-new);
     padding: 3px 5px;
 }
 
@@ -296,6 +336,18 @@ header{
     align-items: center;
     justify-content: space-between;    
 }
+
+.restaurant-card-block-title{
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.restaurant-card-block-city{
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+}
+
 .restaurant-card-heart{
     position: relative;
     font-size: 18px;
@@ -314,22 +366,21 @@ header{
 /*______ FOOTER _____*/
 
 footer{
-    background-color: #353535;
+    background-color: var(--color-fourth);
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 25px;         
 }
-@media screen and (min-width:768px) {
-    footer{
-        flex-direction: row-reverse;
-        align-items: center;
-        padding-right: 7%;
-        gap: 20px;
-        height: 114px;              
-    } 
-    
-}
+    @media screen and (min-width:768px) {
+        footer{
+            flex-direction: row-reverse;
+            align-items: center;
+            padding-right: 7%;
+            gap: 20px;
+            height: 114px;              
+        }        
+    }
 
 .footer-logo{
     font-family: "Shrikhand", Arial, Helvetica, sans-serif;
@@ -343,39 +394,39 @@ footer{
     flex-direction: column;
     gap:7px;
 }
-@media screen and (min-width:768px) {
-    .footer-container{
-        flex-direction: row;
-        gap:20px;
-    } 
-    
+    @media screen and (min-width:768px) {
+        .footer-container{
+            flex-direction: row;
+            gap:20px;
+        } 
+        
+    }
+
+.footer-icon{
+    width: 20px;    
 }
+
 .footer-txt{
     font-weight: 500;
 }
+
 .footer-txt-2{
     font-weight: 300;
 }
-
 
 /*__________Pages Menus__________*/
 
 .menu-img{    
     margin-top: -0.2em;
     width: 100%;
-    object-fit: cover;    
+    object-fit: cover;
+    height: 450px;       
 }
-@media screen and (min-width:768px){
-    .menu-img{        
-        height: 500px;
-    }
-}
-
 
 .section-menu{
     padding:35px 4%;    
     width: 92%;
-    background: #f7f7f7;
+    background: var(--color-background-main);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -384,26 +435,26 @@ footer{
     margin-bottom: -50px;
     gap:35px; 
 }
-@media screen and (min-width:768px) {
-    .section-menu{
-        max-width: 1055px;
-        margin: auto;
-        bottom: 70px;
-        margin-bottom: -70px;   
+    @media screen and (min-width:768px) {
+        .section-menu{
+            max-width: 1055px;
+            margin: auto;
+            bottom: 70px;
+            margin-bottom: -70px;   
+        }
     }
-}
 
 .section-menu-container-title{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-@media screen and (min-width:768px) {
-    .section-menu-container-title{
-        justify-content: center;
-        gap:24px;
-    }    
-}
+    @media screen and (min-width:768px) {
+        .section-menu-container-title{
+            justify-content: center;
+            gap:24px;
+        }    
+    }
 
 .section-menu-title{
     font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
@@ -421,12 +472,12 @@ footer{
     flex-direction: column;
     gap: 10px;
 }
-@media screen and (min-width:768px) {
-    .section-meal{
-        width: 634px;
-        margin: auto;                
+    @media screen and (min-width:768px) {
+        .section-meal{
+            width: 634px;
+            margin: auto;                
+        }
     }
-}
 
 .section-meal-title{
     font-size: 16px;
@@ -437,10 +488,11 @@ footer{
 .section-meal-title-border{
     width: 40px;
     height: 3px;
-    background-color: #99e2d0;
+    background-color: var(--color-third);
     margin-top: -5px;
     margin-bottom: 5px;
 }
+
 .section-meal-container{
     display: flex;
     flex-direction: column;
@@ -457,7 +509,7 @@ footer{
 
 .meal-card-name{
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 21px;
     white-space: nowrap;
     overflow: hidden;
@@ -479,25 +531,17 @@ footer{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+    @media screen and(min-width:768px) {
+        .meal-card-description{
+            font-weight: 400;
+            line-height: 19px;
+            font-size: 16px;
+        }    
+    }
 
 .meal-card-price{
     align-self: flex-end;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 18px;
-}
-
-.section-menu-button{
-    color: white;   
-    padding:15px 20px;    
-    background: linear-gradient(-8deg, #9356DC -5.2%, #FF79DA 110.74%);
-    border-radius: 25px;
-    margin: 15px 0px; 
-    width: 187px;    
-    align-self: center;
-    text-align: center;     
-}
-.section-menu-button:hover{
-    opacity: 90%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
