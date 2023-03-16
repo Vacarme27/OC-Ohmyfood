@@ -1,0 +1,30 @@
+/*____HEADER____*/
+
+header{
+    display: flex;
+    align-items: center;   
+    padding-bottom: 0.625em;
+    padding-top: 1.25em;
+    margin-bottom: 0.2em;                         
+}
+
+.header-side {
+    width: 25%;
+    display: flex; 
+    align-items: center;
+}
+
+.header-center{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo{     
+    height: 1.875em;    
+}
+
+.header-arrow{       
+    margin-left: 1.438em;
+    font-size: 1.25em;        
+}

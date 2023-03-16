@@ -1,545 +1,534 @@
+/*IMPORT SASS*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 /*______IMPORTATION FONTS_______*/
-
-@font-face{
-    font-family: "Shrikhand";
-    src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf");
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+/*______BORDER RADIUS_____*/
+.border-radius-all {
+  border-radius: 0.938em;
 }
 
-@font-face{
-    font-family: "Roboto";
-    src: url("../fonts/Roboto/Roboto-Regular.ttf");
-}
-
-/*________COULEURS SITES________*/
-
-:root {
-    --color-main :#9356DC;
-    --color-second :#FF79DA;
-    --color-third :#99E2D0;
-    --color-white: #fff;
-    --color-fourth:#353535;
-    --color-background-main:#f6f6f6;
-    --color-hover-how-to-button:#f5edff;
-    --color-icon-how-to-button:#7e7e7e;
-    --color-badge-new:#008766;
-}
-
-*{
-    margin: 0;
-    padding: 0;      
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;    
-}
-
-.color-white{
-    color: var(--color-white);
+.border-radius-top {
+  border-radius: 0.938em 0.938em 0 0;
 }
 
 /*_____BOX SHADOW______*/
-
-.box-shadow-header{    
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+.box-shadow-header {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.box-shadow-how-to{
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+.box-shadow-how-to {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.box-shadow-button{
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+.box-shadow-button {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.box-shadow-card{
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/*______BORDER RADIUS_____*/
-
-.border-radius-all{
-    border-radius: 0.938em;
-}
-
-.border-radius-top{
-    border-radius:0.938em 0.938em 0 0;
+.box-shadow-card {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /*_______BUTTON________*/
-
-.button-main{    
-    font-weight: 500;   
-    padding:0.938em 1.25em;    
-    background: linear-gradient(-8deg, var(--color-main) -5.2%, var(--color-second) 110.74%);
-    border-radius: 1.563em;
-    margin: 0.938em 0em; 
-    width: 11.69em;    
-    align-self: center;
-    text-align: center;     
+.button-main {
+  font-weight: 500;
+  padding: 0.938em 1.25em;
+  background: linear-gradient(-8deg, var(--color-main) -5.2%, var(--color-second) 110.74%);
+  border-radius: 1.563em;
+  margin: 0.938em 0em;
+  width: 11.69em;
+  align-self: center;
+  text-align: center;
 }
 
-.button-main:hover{
-    opacity: 90%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+.button-main:hover {
+  opacity: 90%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*____HEADER____*/
-
-header{
-    display: flex;
-    align-items: center;   
-    padding-bottom: 0.625em;
-    padding-top: 1.25em;
-    margin-bottom: 0.2em;                         
+header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.625em;
+  padding-top: 1.25em;
+  margin-bottom: 0.2em;
 }
 
 .header-side {
-    width: 25%;
-    display: flex; 
-    align-items: center;
+  width: 25%;
+  display: flex;
+  align-items: center;
 }
 
-.header-center{
-    width: 50%;
-    display: flex;
-    justify-content: center;
+.header-center {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
-.header-logo{     
-    height: 1.875em;    
+.header-logo {
+  height: 1.875em;
 }
 
-.header-arrow{       
-    margin-left: 1.438em;
-    font-size: 1.25em;        
+.header-arrow {
+  margin-left: 1.438em;
+  font-size: 1.25em;
 }
-
-/*______Section Location________*/
-
-.section-location{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:1.25em;
-    padding-right: 5%;
-    background-color: #eaeaea;
-    height: 2.5em;
-}
-    @media screen and (min-width:769px) {
-        .section-location{
-            padding-right: 0em;
-            gap:0.625em;
-        }            
-    }
-
-.section-location-txt{
-    font-weight: 500;
-    color: var(--color-fourth);
-}
-
-/*_____Section Reserve_____*/
-
-.section-reserve{
-    background-color: var(--color-background-main);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding:1.875em;
-    gap:0.65em;    
-}
-
-@media screen and(min-width:768px) {    
-    .section-reserve-title{ 
-        font-size: 2.5em;
-        line-height: 2.938em;      
-    }
-}
-
-.section-reserve-txt{
-    font-weight: 300;
-    font-size: 1.125em;
-    line-height: 1.313em;
-    color: var(--color-fourth);
-}
-
-/*______Section How To________*/
-
-.section-how-to {
-    display: flex;
-    flex-direction: column;
-    padding: 4%;
-    width: 92%;
-    gap: 1.625em;
-    padding-top:3.125em ;
-    padding-bottom:3.125em ;
-}
-    @media screen and (min-width:768px) {
-        .section-how-to {                   
-            max-width: 1200px;
-            margin: auto;
-        }
-    }
-
-.section-how-to-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap : 1.563em;
-    width: 100%;
-}
-    @media screen and (min-width:769px) {
-        .section-how-to-container {
-            flex-direction: row;       
-        }            
-    }
-
-.how-to-button {
-    padding: 1.25em 0em;
-    width: 96%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    gap : 2%;
-    background: var(--color-background-main);
-}
-
-.how-to-number {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 0.688em;
-    background: var(--color-main);
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 50%;    
-    font-size: 0.875em;    
-}
-
-.how-to-button:hover {
-    background: var(--color-hover-how-to-button);
-}
-
-.how-to-button:hover .how-to-logo{
-    color: var(--color-main);
-}
-
-.how-to-position{
-    display: flex;
-    width: 80%;
-    align-items: center;
-    gap:5%;    
-}
-
-.how-to-logo {
-    color: var(--color-icon-how-to-button);
-}
-
-.how-to-txt {
-    width: 100%;
-    align-self: center;
-    font-weight: 500;
-}
-
-/*______Section Restaurant______*/
-
-.section-restaurant-background{
-    background:var(--color-background-main);
-}
-
-.section-restaurant{
-    display: flex;
-    flex-direction: column;    
-    padding:3.125em 4%;
-    background-color: var(--color-background-main);
-    width: 92%;
-}
-    @media screen and (min-width:768px) {
-        .section-restaurant{
-            overflow: scroll;
-        }
-    }
-
-.section-restaurant-title{
-    width: 92%;
-    padding: 4%;
-    padding-bottom: 0;
-}
-    @media screen and (min-width:768px) {
-        .section-restaurant-title{
-            max-width: 1200px;
-            margin: auto;
-            margin-bottom: -1.25em;
-            padding-top: 2.5em;                              
-        }        
-    }
-
-.restaurant-container-card{
-    display: flex;
-    flex-direction: column;    
-    width: 100%;    
-}
-    @media screen and (min-width:768px) {
-        .restaurant-container-card{            
-            max-width:1200px ;
-            margin: auto;            
-            flex-direction: row;            
-            padding-bottom: 1.25em;            
-        }                
-    }
-
-.restaurant-card{
-    height: 15.688em;
-    width: 100%;
-}
-    @media screen and (min-width:768px) {
-        .restaurant-card{
-            min-width: 335px;
-        }
-    }
-
-.restaurant-card-article{
-    height: 100%;    
-}
-
-.restaurant-card-img{    
-    height: 100%;   
-    object-fit: cover;
-    width: 100%;        
-}
-
-.restaurant-card-new{    
-    position: relative;
-    align-self: flex-end;   
-    bottom: 10em;
-    margin-right: 5%;
-    font-size: 0.875em;
-    font-weight: 500;    
-    background-color: var(--color-third) ;
-    color:var(--color-badge-new);
-    padding: 0.1875em 0.3125em;
-}
-
-.restaurant-card-block-img{
-    height: 70%;
-    display: flex;
-    flex-direction: column;    
-}
-
-.restaurant-card-block-txt{
-    display: flex;
-    padding: 0 3%;
-    height: 30%;          
-    align-items: center;
-    justify-content: space-between;    
-}
-
-.restaurant-card-block-title{
-    font-size: 1.125em;
-    line-height: 1.3125em;
-}
-
-.restaurant-card-block-city{
-    font-weight: 300;
-    font-size: 1.0625em;
-    line-height: 1.25em;
-}
-
-.restaurant-card-heart{
-    position: relative;
-    font-size: 1.125em;
-    align-self: flex-end;
-    margin-right: 5%;    
-    bottom: 2.8125em;              
-}
-    @media screen and (min-width:768px){
-        .restaurant-card-heart{            
-            margin-right: 0;
-            right: 2.5em;
-            bottom: 1.875em;      
-        }
-    }
 
 /*______ FOOTER _____*/
-
-footer{
-    background-color: var(--color-fourth);
-    display: flex;
-    flex-direction: column;
-    gap: 0.625em;
-    padding: 1.5625em;         
-}
-    @media screen and (min-width:768px) {
-        footer{
-            flex-direction: row-reverse;
-            align-items: center;
-            padding-right: 7%;
-            gap: 1.25em;
-            height: 7.125em;              
-        }        
-    }
-
-.footer-logo{
-    font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-    font-size: 1.125em;
-    line-height: 1.625em;
-    font-style: italic;
+footer {
+  background-color: var(--color-fourth);
+  display: flex;
+  flex-direction: column;
+  gap: 0.625em;
+  padding: 1.5625em;
 }
 
-.footer-container{
-    display: flex;
-    flex-direction: column;
-    gap:0.4375em;
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 7%;
+    gap: 1.25em;
+    height: 7.125em;
+  }
 }
-    @media screen and (min-width:768px) {
-        .footer-container{
-            flex-direction: row;
-            gap:1.25em;
-        } 
-        
-    }
-
-.footer-icon{
-    width: 1.25em;    
-}
-
-.footer-txt{
-    font-weight: 500;
+.footer-logo {
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  font-size: 1.125em;
+  line-height: 1.625em;
+  font-style: italic;
 }
 
-.footer-txt-2{
-    font-weight: 300;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4375em;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    gap: 1.25em;
+  }
+}
+.footer-icon {
+  width: 1.25em;
+}
+
+.footer-txt {
+  font-weight: 500;
+}
+
+.footer-txt-2 {
+  font-weight: 300;
 }
 
 /*__________Pages Menus__________*/
-
-.menu-img{    
-    margin-top: -0.2em;
-    width: 100%;
-    object-fit: cover;
-    height: 28.125em;       
+.menu-img {
+  margin-top: -0.2em;
+  width: 100%;
+  object-fit: cover;
+  height: 28.125em;
 }
 
-.section-menu{
-    padding:35px 4%;    
-    width: 92%;
-    background: var(--color-background-main);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    bottom: 3.125em;
-    border-radius: 2.5em 2.5em 0 0;
-    margin-bottom: -3.125em;
-    gap:2.1875em;
-}
-    @media screen and (min-width:768px) {
-        .section-menu{
-            max-width: 1055px;
-            margin: auto;
-            bottom: 4.375em;
-            margin-bottom: -4.375em;   
-        }
-    }
-
-.section-menu-container-title{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-    @media screen and (min-width:768px) {
-        .section-menu-container-title{
-            justify-content: center;
-            gap:1.5em;
-        }    
-    }
-
-.section-menu-title{
-    font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
-    font-style: italic;    
-    font-size: 1.75em;
-    line-height: 2.5625em;
+.section-menu {
+  padding: 35px 4%;
+  width: 92%;
+  background: var(--color-background-main);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 3.125em;
+  border-radius: 2.5em 2.5em 0 0;
+  margin-bottom: -3.125em;
+  gap: 2.1875em;
 }
 
-.section-menu-heart{
-    font-size: 1.375em;    
+@media screen and (min-width: 768px) {
+  .section-menu {
+    max-width: 1055px;
+    margin: auto;
+    bottom: 4.375em;
+    margin-bottom: -4.375em;
+  }
+}
+.section-menu-container-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.section-meal{
-    display: flex;
-    flex-direction: column;
-    gap: 0.625em;
+@media screen and (min-width: 768px) {
+  .section-menu-container-title {
+    justify-content: center;
+    gap: 1.5em;
+  }
 }
-    @media screen and (min-width:768px) {
-        .section-meal{
-            width: 634px;
-            margin: auto;
-        }
-    }
+.section-menu-title {
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 1.75em;
+  line-height: 2.5625em;
+}
 
-.section-meal-title{
+.section-menu-heart {
+  font-size: 1.375em;
+  cursor: pointer;
+}
+
+.section-meal {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625em;
+}
+
+@media screen and (min-width: 768px) {
+  .section-meal {
+    width: 634px;
+    margin: auto;
+  }
+}
+.section-meal-title {
+  font-size: 1em;
+  line-height: 1.1875em;
+  font-weight: 300;
+}
+
+.section-meal-title-border {
+  width: 2.5em;
+  height: 0.1875em;
+  background-color: var(--color-third);
+  margin-top: -0.3125em;
+  margin-bottom: 0.3125em;
+}
+
+.section-meal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625em;
+}
+
+.meal-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625em;
+  max-height: 4.25em;
+}
+
+.meal-card-name {
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 1.3125em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meal-card-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125em;
+  max-width: 80%;
+}
+
+.meal-card-description {
+  font-size: 0.9375em;
+  font-weight: 300;
+  line-height: 1.125em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 768px) {
+  .meal-card-description {
+    font-weight: 400;
+    line-height: 1.185em;
     font-size: 1em;
-    line-height: 1.1875em;
-    font-weight: 300;
+  }
+}
+.meal-card-price {
+  align-self: flex-end;
+  font-size: 0.9375em;
+  font-weight: 700;
+  line-height: 1.125em;
 }
 
-.section-meal-title-border{
-    width: 2.5em;
-    height: 0.1875em;
-    background-color: var(--color-third);
-    margin-top: -0.3125em;
-    margin-bottom: 0.3125em;
+/*______Section Location________*/
+.section-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25em;
+  padding-right: 5%;
+  background-color: #eaeaea;
+  height: 2.5em;
 }
 
-.section-meal-container{
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 769px) {
+  .section-location {
+    padding-right: 0em;
     gap: 0.625em;
+  }
+}
+.section-location-txt {
+  font-weight: 500;
+  color: var(--color-fourth);
 }
 
-.meal-card{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    padding: 0.625em;
-    max-height: 4.25em;    
+/*_____Section Reserve_____*/
+.section-reserve {
+  background-color: var(--color-background-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.875em;
+  gap: 0.65em;
 }
 
-.meal-card-name{
-    font-size: 1.125em;
-    font-weight: 500;
-    line-height: 1.3125em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+@media screen and (min-width: 768px) {
+  .section-reserve-title {
+    font-size: 2.5em;
+    line-height: 2.938em;
+  }
+}
+.section-reserve-txt {
+  font-weight: 300;
+  font-size: 1.125em;
+  line-height: 1.313em;
+  color: var(--color-fourth);
 }
 
-.meal-card-txt{
-    display: flex;
-    flex-direction: column;
-    gap:0.3125em;
-    max-width: 80%;
+/*______Section How To________*/
+.section-how-to {
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+  width: 92%;
+  gap: 1.625em;
+  padding-top: 3.125em;
+  padding-bottom: 3.125em;
 }
 
-.meal-card-description{    
-    font-size: 0.9375em;
-    font-weight: 300;
-    line-height: 1.125em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+@media screen and (min-width: 768px) {
+  .section-how-to {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
-    @media screen and(min-width:768px) {
-        .meal-card-description{
-            font-weight: 400;
-            line-height: 1.185em;
-            font-size: 1em;
-        }    
-    }
+.section-how-to-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.563em;
+  width: 100%;
+}
 
-.meal-card-price{
-    align-self: flex-end;
-    font-size: 0.9375em;
-    font-weight: 700;
-    line-height: 1.125em;
+@media screen and (min-width: 769px) {
+  .section-how-to-container {
+    flex-direction: row;
+  }
 }
+.how-to-button {
+  padding: 1.25em 0em;
+  width: 96%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  background: var(--color-background-main);
+}
+
+.how-to-number {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0.688em;
+  background: var(--color-main);
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  font-size: 0.875em;
+}
+
+.how-to-button:hover {
+  background: var(--color-hover-how-to-button);
+}
+
+.how-to-button:hover .how-to-logo {
+  color: var(--color-main);
+}
+
+.how-to-position {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 5%;
+}
+
+.how-to-logo {
+  color: var(--color-icon-how-to-button);
+}
+
+.how-to-txt {
+  width: 100%;
+  align-self: center;
+  font-weight: 500;
+}
+
+/*______Section Restaurant______*/
+.section-restaurant-background {
+  background: var(--color-background-main);
+}
+
+.section-restaurant {
+  display: flex;
+  flex-direction: column;
+  padding: 3.125em 4%;
+  background-color: var(--color-background-main);
+  width: 92%;
+}
+
+@media screen and (min-width: 768px) {
+  .section-restaurant {
+    overflow: scroll;
+  }
+}
+.section-restaurant-title {
+  width: 92%;
+  padding: 4%;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section-restaurant-title {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: -1.25em;
+    padding-top: 2.5em;
+  }
+}
+.restaurant-container-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-container-card {
+    max-width: 1200px;
+    margin: auto;
+    flex-direction: row;
+    padding-bottom: 1.25em;
+  }
+}
+.restaurant-card {
+  height: 15.688em;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-card {
+    min-width: 335px;
+  }
+}
+.restaurant-card-article {
+  height: 100%;
+}
+
+.restaurant-card-img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.restaurant-card-new {
+  position: relative;
+  align-self: flex-end;
+  bottom: 10em;
+  margin-right: 5%;
+  font-size: 0.875em;
+  font-weight: 500;
+  background-color: var(--color-third);
+  color: var(--color-badge-new);
+  padding: 0.1875em 0.3125em;
+}
+
+.restaurant-card-block-img {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-card-block-txt {
+  display: flex;
+  padding: 0 3%;
+  height: 30%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restaurant-card-block-title {
+  font-size: 1.125em;
+  line-height: 1.3125em;
+}
+
+.restaurant-card-block-city {
+  font-weight: 300;
+  font-size: 1.0625em;
+  line-height: 1.25em;
+}
+
+.restaurant-card-heart {
+  position: relative;
+  font-size: 1.125em;
+  align-self: flex-end;
+  margin-right: 5%;
+  bottom: 2.8125em;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-card-heart {
+    margin-right: 0;
+    right: 2.5em;
+    bottom: 1.875em;
+  }
+}
+/*________COULEURS SITES________*/
+:root {
+  --color-main:#9356DC;
+  --color-second:#FF79DA;
+  --color-third:#99E2D0;
+  --color-white: #fff;
+  --color-fourth:#353535;
+  --color-background-main:#f6f6f6;
+  --color-hover-how-to-button:#f5edff;
+  --color-icon-how-to-button:#7e7e7e;
+  --color-badge-new:#008766;
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+/*# sourceMappingURL=style.css.map */

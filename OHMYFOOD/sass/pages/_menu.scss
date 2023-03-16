@@ -1,0 +1,132 @@
+/*__________Pages Menus__________*/
+
+.menu-img{    
+    margin-top: -0.2em;
+    width: 100%;
+    object-fit: cover;
+    height: 28.125em;       
+}
+
+.section-menu{
+    padding:35px 4%;    
+    width: 92%;
+    background: var(--color-background-main);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 3.125em;
+    border-radius: 2.5em 2.5em 0 0;
+    margin-bottom: -3.125em;
+    gap:2.1875em;
+}
+    @media screen and (min-width:768px) {
+        .section-menu{
+            max-width: 1055px;
+            margin: auto;
+            bottom: 4.375em;
+            margin-bottom: -4.375em;   
+        }
+    }
+
+.section-menu-container-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    @media screen and (min-width:768px) {
+        .section-menu-container-title{
+            justify-content: center;
+            gap:1.5em;
+        }    
+    }
+
+.section-menu-title{
+    font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+    font-style: italic;    
+    font-size: 1.75em;
+    line-height: 2.5625em;
+}
+
+.section-menu-heart{
+    font-size: 1.375em;
+    cursor: pointer;   
+}
+
+.section-meal{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+}
+    @media screen and (min-width:768px) {
+        .section-meal{
+            width: 634px;
+            margin: auto;
+        }
+    }
+
+.section-meal-title{
+    font-size: 1em;
+    line-height: 1.1875em;
+    font-weight: 300;
+}
+
+.section-meal-title-border{
+    width: 2.5em;
+    height: 0.1875em;
+    background-color: var(--color-third);
+    margin-top: -0.3125em;
+    margin-bottom: 0.3125em;
+}
+
+.section-meal-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+}
+
+.meal-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 0.625em;
+    max-height: 4.25em;    
+}
+
+.meal-card-name{
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 1.3125em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.meal-card-txt{
+    display: flex;
+    flex-direction: column;
+    gap:0.3125em;
+    max-width: 80%;
+}
+
+.meal-card-description{    
+    font-size: 0.9375em;
+    font-weight: 300;
+    line-height: 1.125em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+    @media screen and (min-width:768px) {
+        .meal-card-description{
+            font-weight: 400;
+            line-height: 1.185em;
+            font-size: 1em;
+        }    
+    }
+
+.meal-card-price{
+    align-self: flex-end;
+    font-size: 0.9375em;
+    font-weight: 700;
+    line-height: 1.125em;
+}
