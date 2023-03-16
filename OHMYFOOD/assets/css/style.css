@@ -58,22 +58,22 @@
 /*______BORDER RADIUS_____*/
 
 .border-radius-all{
-    border-radius: 15px;
+    border-radius: 0.938em;
 }
 
 .border-radius-top{
-    border-radius:15px 15px 0 0;
+    border-radius:0.938em 0.938em 0 0;
 }
 
 /*_______BUTTON________*/
 
 .button-main{    
     font-weight: 500;   
-    padding:15px 20px;    
+    padding:0.938em 1.25em;    
     background: linear-gradient(-8deg, var(--color-main) -5.2%, var(--color-second) 110.74%);
-    border-radius: 25px;
-    margin: 15px 0px; 
-    width: 187px;    
+    border-radius: 1.563em;
+    margin: 0.938em 0em; 
+    width: 11.69em;    
     align-self: center;
     text-align: center;     
 }
@@ -88,8 +88,8 @@
 header{
     display: flex;
     align-items: center;   
-    padding-bottom: 10px;
-    padding-top: 20px;
+    padding-bottom: 0.625em;
+    padding-top: 1.25em;
     margin-bottom: 0.2em;                         
 }
 
@@ -106,12 +106,12 @@ header{
 }
 
 .header-logo{     
-    height: 30px;    
+    height: 1.875em;    
 }
 
 .header-arrow{       
-    margin-left: 23px;
-    font-size: 20px;        
+    margin-left: 1.438em;
+    font-size: 1.25em;        
 }
 
 /*______Section Location________*/
@@ -120,15 +120,15 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:20px;
+    gap:1.25em;
     padding-right: 5%;
     background-color: #eaeaea;
-    height: 40px;
+    height: 2.5em;
 }
     @media screen and (min-width:769px) {
         .section-location{
-            padding-right: 0px;
-            gap:10px;
+            padding-right: 0em;
+            gap:0.625em;
         }            
     }
 
@@ -145,21 +145,21 @@ header{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding:30px;
-    gap:10px;    
+    padding:1.875em;
+    gap:0.65em;    
 }
 
 @media screen and(min-width:768px) {    
     .section-reserve-title{ 
-        font-size: 40px;
-        line-height: 47px;      
+        font-size: 2.5em;
+        line-height: 2.938em;      
     }
 }
 
 .section-reserve-txt{
     font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125em;
+    line-height: 1.313em;
     color: var(--color-fourth);
 }
 
@@ -170,9 +170,9 @@ header{
     flex-direction: column;
     padding: 4%;
     width: 92%;
-    gap: 26px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    gap: 1.625em;
+    padding-top:3.125em ;
+    padding-bottom:3.125em ;
 }
     @media screen and (min-width:768px) {
         .section-how-to {                   
@@ -185,7 +185,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap : 25px;
+    gap : 1.563em;
     width: 100%;
 }
     @media screen and (min-width:769px) {
@@ -195,7 +195,7 @@ header{
     }
 
 .how-to-button {
-    padding: 20px 0px;
+    padding: 1.25em 0em;
     width: 96%;
     text-align: center;
     display: flex;
@@ -209,12 +209,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 11px;
+    right: 0.688em;
     background: var(--color-main);
-    width: 24px;
-    height: 24px;
+    width: 1.5em;
+    height: 1.5em;
     border-radius: 50%;    
-    font-size: 14px;    
+    font-size: 0.875em;    
 }
 
 .how-to-button:hover {
@@ -251,9 +251,9 @@ header{
 .section-restaurant{
     display: flex;
     flex-direction: column;    
-    padding:50px 4%;
+    padding:3.125em 4%;
     background-color: var(--color-background-main);
-    width: 92%;    
+    width: 92%;
 }
     @media screen and (min-width:768px) {
         .section-restaurant{
@@ -270,8 +270,8 @@ header{
         .section-restaurant-title{
             max-width: 1200px;
             margin: auto;
-            margin-bottom: -20px;
-            padding-top: 40px;                              
+            margin-bottom: -1.25em;
+            padding-top: 2.5em;                              
         }        
     }
 
@@ -285,12 +285,12 @@ header{
             max-width:1200px ;
             margin: auto;            
             flex-direction: row;            
-            padding-bottom: 20px;            
+            padding-bottom: 1.25em;            
         }                
     }
 
 .restaurant-card{
-    height: 251px;
+    height: 15.688em;
     width: 100%;
 }
     @media screen and (min-width:768px) {
@@ -313,14 +313,14 @@ header{
     position: relative;
     align-self: flex-end;
     text-align: center;   
-    bottom: 160px;
+    bottom: 16em;
     margin-right: 5%;     
-    width: 60px;       
-    font-size: 14px;
+    width: 3.75em;       
+    font-size: 0.875em;
     font-weight: 500;    
     background-color: var(--color-third) ;
     color:var(--color-badge-new);
-    padding: 3px 5px;
+    padding: 0.1875em 0.3125em;
 }
 
 .restaurant-card-block-img{
@@ -338,28 +338,28 @@ header{
 }
 
 .restaurant-card-block-title{
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125em;
+    line-height: 1.3125em;
 }
 
 .restaurant-card-block-city{
     font-weight: 300;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 1.0625em;
+    line-height: 1.25em;
 }
 
 .restaurant-card-heart{
     position: relative;
-    font-size: 18px;
+    font-size: 1.125em;
     align-self: flex-end;
     margin-right: 5%;    
-    bottom: 45px;              
+    bottom: 2.8125em;              
 }
     @media screen and (min-width:768px){
         .restaurant-card-heart{            
             margin-right: 0;
-            right: 40px;
-            bottom: 30px;      
+            right: 2.5em;
+            bottom: 1.875em;      
         }
     }
 
@@ -369,41 +369,41 @@ footer{
     background-color: var(--color-fourth);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 25px;         
+    gap: 0.625em;
+    padding: 1.5625em;         
 }
     @media screen and (min-width:768px) {
         footer{
             flex-direction: row-reverse;
             align-items: center;
             padding-right: 7%;
-            gap: 20px;
-            height: 114px;              
+            gap: 1.25em;
+            height: 7.125em;              
         }        
     }
 
 .footer-logo{
     font-family: "Shrikhand", Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125em;
+    line-height: 1.625em;
     font-style: italic;
 }
 
 .footer-container{
     display: flex;
     flex-direction: column;
-    gap:7px;
+    gap:0.4375em;
 }
     @media screen and (min-width:768px) {
         .footer-container{
             flex-direction: row;
-            gap:20px;
+            gap:1.25em;
         } 
         
     }
 
 .footer-icon{
-    width: 20px;    
+    width: 1.25em;    
 }
 
 .footer-txt{
@@ -420,7 +420,7 @@ footer{
     margin-top: -0.2em;
     width: 100%;
     object-fit: cover;
-    height: 450px;       
+    height: 28.125em;       
 }
 
 .section-menu{
@@ -430,17 +430,17 @@ footer{
     display: flex;
     flex-direction: column;
     position: relative;
-    bottom: 50px;
-    border-radius: 40px 40px 0 0;
-    margin-bottom: -50px;
-    gap:35px; 
+    bottom: 3.125em;
+    border-radius: 2.5em 2.5em 0 0;
+    margin-bottom: -3.125em;
+    gap:2.1875em;
 }
     @media screen and (min-width:768px) {
         .section-menu{
             max-width: 1055px;
             margin: auto;
-            bottom: 70px;
-            margin-bottom: -70px;   
+            bottom: 4.375em;
+            margin-bottom: -4.375em;   
         }
     }
 
@@ -452,65 +452,65 @@ footer{
     @media screen and (min-width:768px) {
         .section-menu-container-title{
             justify-content: center;
-            gap:24px;
+            gap:1.5em;
         }    
     }
 
 .section-menu-title{
     font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
     font-style: italic;    
-    font-size: 28px;
-    line-height: 41px;
+    font-size: 1.75em;
+    line-height: 2.5625em;
 }
 
 .section-menu-heart{
-    font-size: 22px;    
+    font-size: 1.375em;    
 }
 
 .section-meal{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625em;
 }
     @media screen and (min-width:768px) {
         .section-meal{
             width: 634px;
-            margin: auto;                
+            margin: auto;
         }
     }
 
 .section-meal-title{
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1em;
+    line-height: 1.1875em;
     font-weight: 300;
 }
 
 .section-meal-title-border{
-    width: 40px;
-    height: 3px;
+    width: 2.5em;
+    height: 0.1875em;
     background-color: var(--color-third);
-    margin-top: -5px;
-    margin-bottom: 5px;
+    margin-top: -0.3125em;
+    margin-bottom: 0.3125em;
 }
 
 .section-meal-container{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.625em;
 }
 
 .meal-card{
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    padding: 10px;
-    max-height: 68px;    
+    padding: 0.625em;
+    max-height: 4.25em;    
 }
 
 .meal-card-name{
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 500;
-    line-height: 21px;
+    line-height: 1.3125em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -519,14 +519,14 @@ footer{
 .meal-card-txt{
     display: flex;
     flex-direction: column;
-    gap:5px;
+    gap:0.3125em;
     max-width: 80%;
 }
 
 .meal-card-description{    
-    font-size: 15px;
+    font-size: 0.9375em;
     font-weight: 300;
-    line-height: 18px;
+    line-height: 1.125em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -534,14 +534,14 @@ footer{
     @media screen and(min-width:768px) {
         .meal-card-description{
             font-weight: 400;
-            line-height: 19px;
-            font-size: 16px;
+            line-height: 1.185em;
+            font-size: 1em;
         }    
     }
 
 .meal-card-price{
     align-self: flex-end;
-    font-size: 15px;
+    font-size: 0.9375em;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 1.125em;
 }
