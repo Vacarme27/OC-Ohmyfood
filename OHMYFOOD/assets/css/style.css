@@ -311,11 +311,9 @@ header{
 
 .restaurant-card-new{    
     position: relative;
-    align-self: flex-end;
-    text-align: center;   
-    bottom: 16em;
-    margin-right: 5%;     
-    width: 3.75em;       
+    align-self: flex-end;   
+    bottom: 10em;
+    margin-right: 5%;
     font-size: 0.875em;
     font-weight: 500;    
     background-color: var(--color-third) ;
