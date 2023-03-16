@@ -355,6 +355,7 @@ footer {
   align-items: center;
   gap: 2%;
   background: var(--color-background-main);
+  white-space: nowrap;
 }
 
 .how-to-number {
@@ -392,9 +393,15 @@ footer {
 .how-to-txt {
   width: 100%;
   align-self: center;
+  font-size: 1em;
   font-weight: 500;
 }
 
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  .how-to-txt {
+    font-size: 0.95em;
+  }
+}
 /*______Section Restaurant______*/
 .section-restaurant-background {
   background: var(--color-background-main);
