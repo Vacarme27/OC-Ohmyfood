@@ -28,15 +28,17 @@
         }
     }
 
-.section-menu-container-title{
+.section-menu-container-title{    
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 6%;   
 }
     @media screen and (min-width:768px) {
         .section-menu-container-title{
             justify-content: center;
-            gap:1.5em;
+            gap:3em;
+            margin-right: 0;
         }    
     }
 
@@ -47,20 +49,60 @@
     line-height: 2.5625em;
 }
 
-.section-menu-heart{
-    font-size: 1.375em;
-    cursor: pointer;   
-}
-
 .section-meal{
     display: flex;
     flex-direction: column;
-    gap: 0.625em;
+    gap: 0.625em;    
 }
     @media screen and (min-width:768px) {
         .section-meal{
             width: 634px;
             margin: auto;
+        }
+    }
+
+@mixin anim-meal ($delay:0ms){
+    animation: meal 1000ms $delay both;    
+}
+
+.meal-card-1, .section-meal{
+    @include anim-meal();     
+}
+.meal-card-2{
+    @include anim-meal(100ms);     
+}
+.meal-card-3{
+    @include anim-meal(200ms);    
+}
+.meal-card-4{
+    @include anim-meal(300ms);    
+}
+.meal-card-5{
+    @include anim-meal(400ms);     
+}
+.meal-card-6{
+    @include anim-meal(500ms);     
+}
+.meal-card-7{
+    @include anim-meal(600ms);    
+}
+.meal-card-8{
+    @include anim-meal(700ms);    
+}
+.meal-card-9{
+    @include anim-meal(800ms);    
+}
+.meal-card-10{
+    @include anim-meal(900ms);    
+}
+
+@keyframes meal {
+    0% {
+        opacity: 0;
+        transform: translateY(25%);
+        }
+    100% {
+        opacity: 1;
         }
     }
 
@@ -88,7 +130,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;    
-    padding: 0.625em;
+    padding: 0.625em 4%;    
     max-height: 4.25em;    
 }
 
@@ -124,7 +166,7 @@
         }    
     }
 
-.meal-card-price{
+.meal-card-price{    
     align-self: flex-end;
     font-size: 0.9375em;
     font-weight: 700;
