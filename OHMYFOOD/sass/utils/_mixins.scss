@@ -1,0 +1,11 @@
+/*______MIXIN MENU______ */
+
+@mixin anim-meal ($delay:0ms){
+    animation: meal 1000ms $delay both;    
+}
+
+/*______MIXIN LOADER______ */
+
+@mixin anim-loader ($delay:0ms){
+    animation: loader-letter 1000ms ease infinite $delay both;    
+}

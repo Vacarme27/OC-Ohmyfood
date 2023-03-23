@@ -1,0 +1,94 @@
+/*_______LOADER_______*/
+
+
+@keyframes loader {
+    from{        
+        visibility: visible;        
+    }
+    to{               
+        visibility: hidden;
+    }  
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+        &-container{
+            display: flex;    
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background:var(--color-background-main);
+            opacity: 0.9;
+            animation: loader 3000ms forwards;
+            z-index: 10;
+        } 
+        &-letter{
+            font-family: "shrikhand", Arial, Helvetica, sans-serif;  
+            font-size: 3em;  
+            font-weight: 700;
+                &:hover{
+                    animation: paused;
+                }
+            }
+       
+}
+
+@media screen and (min-width:768px) {
+    .loader-letter{
+        font-size: 6em;
+    }    
+}
+
+@keyframes loader-letter {
+    from{
+        transform: translateY(0);
+    }
+    to{ 
+        transform: translateY(2em);        
+    }
+}
+
+.loader-letter-1, .loader-letter-2{
+    color: var(--color-main);    
+}
+
+.loader-letter-3,.loader-letter-4, .loader-letter-5, .loader-letter-6{
+    color: var(--color-second);    
+}
+
+.loader-letter-5, .loader-letter-6, .loader-letter-7, .loader-letter-8{
+    color: var(--color-third);   
+}
+.loader-letter{
+    &-1{
+        @include anim-loader(100ms)
+    }
+    &-2{
+        @include anim-loader(200ms)
+    }
+    &-3{
+        @include anim-loader(300ms)
+    }
+    &-4{
+        @include anim-loader(400ms)
+    }
+    &-5{
+        @include anim-loader(500ms)
+    }
+    &-6{
+        @include anim-loader(600ms)
+    }
+    &-7{
+        @include anim-loader(700ms)
+    }
+    &-8{
+        @include anim-loader(800ms)
+    }
+    &-1{
+        @include anim-loader(900ms)
+    }
+}

@@ -17,42 +17,59 @@
     bottom: 3.125em;
     border-radius: 2.5em 2.5em 0 0;
     margin-bottom: -3.125em;
-    gap:2.1875em;
+    gap:2.1875em;    
+        &-container-title{    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 6%;   
+        }
+        &-title{
+            font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+            font-style: italic;    
+            font-size: 1.75em;
+            line-height: 2.5625em;
+        }
 }
     @media screen and (min-width:768px) {
         .section-menu{
             max-width: 1055px;
             margin: auto;
             bottom: 4.375em;
-            margin-bottom: -4.375em;   
+            margin-bottom: -4.375em;
+                &-container-title{
+                    justify-content: center;
+                    gap:3em;
+                    margin-right: 0;
+                }    
         }
     }
-
-.section-menu-container-title{    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 6%;   
-}
-    @media screen and (min-width:768px) {
-        .section-menu-container-title{
-            justify-content: center;
-            gap:3em;
-            margin-right: 0;
-        }    
-    }
-
-.section-menu-title{
-    font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
-    font-style: italic;    
-    font-size: 1.75em;
-    line-height: 2.5625em;
-}
 
 .section-meal{
     display: flex;
     flex-direction: column;
-    gap: 0.625em;    
+    gap: 0.625em;
+    &-title{
+        font-size: 1em;
+        line-height: 1.1875em;
+        font-weight: 300;
+            &-border{
+                width: 2.5em;
+                height: 0.1875em;
+                background-color: var(--color-third);
+                margin-top: -0.3125em;
+                margin-bottom: 0.3125em;
+            }
+    } 
+    &-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.625em;
+            &-child{
+                display: flex;
+                background-color: transparent;
+            }       
+    }      
 }
     @media screen and (min-width:768px) {
         .section-meal{
@@ -60,76 +77,6 @@
             margin: auto;
         }
     }
-
-@mixin anim-meal ($delay:0ms){
-    animation: meal 1000ms $delay both;    
-}
-
-.meal-card-1, .section-meal{
-    @include anim-meal(0ms);
-}
-.meal-card-2{
-    @include anim-meal(100ms);     
-}
-.meal-card-3{
-    @include anim-meal(200ms);    
-}
-.meal-card-4{
-    @include anim-meal(300ms);    
-}
-.meal-card-5{
-    @include anim-meal(400ms);     
-}
-.meal-card-6{
-    @include anim-meal(500ms);     
-}
-.meal-card-7{
-    @include anim-meal(600ms);    
-}
-.meal-card-8{
-    @include anim-meal(700ms);    
-}
-.meal-card-9{
-    @include anim-meal(800ms);    
-}
-.meal-card-10{
-    @include anim-meal(900ms);    
-}
-
-@keyframes meal {
-    0% {
-        opacity: 0;
-        transform: translateY(25%);
-        }
-    100% {
-        opacity: 1;
-        }
-    }
-
-.section-meal-title{
-    font-size: 1em;
-    line-height: 1.1875em;
-    font-weight: 300;
-}
-
-.section-meal-title-border{
-    width: 2.5em;
-    height: 0.1875em;
-    background-color: var(--color-third);
-    margin-top: -0.3125em;
-    margin-bottom: 0.3125em;
-}
-
-.section-meal-container{
-    display: flex;
-    flex-direction: column;
-    gap: 0.625em;
-    
-}
-.section-meal-container-child{
-    display: flex;
-    width: 100%;    
-}
 
 .meal-card{
     z-index: 2;
@@ -140,31 +87,40 @@
     max-height: 4.25em;
     cursor: pointer;
     width: 92%;
-}
-
-.meal-card-name{
-    font-size: 1.125em;
-    font-weight: 500;
-    line-height: 1.3125em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.meal-card-txt{
-    display: flex;
-    flex-direction: column;
-    gap:0.3125em;
-    max-width: 80%;
-}
-
-.meal-card-description{    
-    font-size: 0.9375em;
-    font-weight: 300;
-    line-height: 1.125em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    background: var(--color-white);
+        &-name{
+            font-size: 1.125em;
+            font-weight: 500;
+            line-height: 1.3125em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &-txt{
+            display: flex;
+            flex-direction: column;
+            gap:0.3125em;
+            max-width: 80%;
+        }
+        &-description{      
+            font-size: 0.9375em;
+            font-weight: 300;
+            line-height: 1.125em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;    
+        }
+        &-price{  
+            display: flex;    
+            font-size: 0.9375em;
+            font-weight: 700;
+            line-height: 1.125em;
+                &-container{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;     
+                }
+        }    
 }
     @media screen and (min-width:768px) {
         .meal-card-description{
@@ -173,55 +129,3 @@
             font-size: 1em;
         }    
     }
-.meal-card-price-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;     
-}
-
-.check-anim{ 
-    z-index: 1;
-    position: relative;   
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    width:10%;
-    max-height: 4.25em;
-    display: none;
-    background: var(--color-third);    
-}
-
-.section-meal-container-child:active .check-anim{
-    display:flex;
-    animation: check 800ms ease forwards;
-}
-@keyframes check{
-    from {
-        width: 0%;
-    }
-    to {
-        width: 10%;
-    }    
-}
-.check-icon{
-    color: var(--color-white);
-    font-size: 0; 
-    animation: check-icon 800ms 100ms ease forwards;  
-}
-@keyframes check-icon{
-    from {
-        rotate:(0);
-        font-size: 0.5em;
-    }
-    to {
-        rotate:(-360deg);
-        font-size: 1.125em;        
-    }    
-}
-
-.meal-card-price{  
-    display: flex;    
-    font-size: 0.9375em;
-    font-weight: 700;
-    line-height: 1.125em;
-}

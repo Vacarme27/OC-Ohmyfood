@@ -1,4 +1,6 @@
 /*IMPORT SASS*/
+@import "utils/variables";
+@import "utils/mixins";
 
 @import "base/base";
 @import "base/fonts";
@@ -13,4 +15,7 @@
 @import "pages/menu";
 @import "pages/accueil";
 
-@import "utils/variables"
+@import "anim/heart";
+@import "anim/meal";
+@import "anim/loader";
+@import "anim/check";

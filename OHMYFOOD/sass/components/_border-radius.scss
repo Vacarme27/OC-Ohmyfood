@@ -1,13 +1,12 @@
 /*______BORDER RADIUS_____*/
-
-.border-radius-all{
-    border-radius: 0.938em;
-}
-
-.border-radius-top{
-    border-radius:0.938em 0.938em 0 0;
-}
-
-.border-radius-right{
-    border-radius: 0 0.938em 0.938em 0;
+.border-radius{
+    &-all{
+        border-radius: 0.938em;
+    }    
+    &-top{
+        border-radius:0.938em 0.938em 0 0;
+    }    
+    &-right{
+        border-radius: 0 0.938em 0.938em 0;
+    }
 }

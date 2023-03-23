@@ -8,13 +8,12 @@
     margin: 0.938em 0em; 
     width: 11.69em;    
     align-self: center;
-    text-align: center;     
-}
-
-.button-main:hover{
-    opacity: 90%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
+    text-align: center;
+        &:hover{
+            opacity: 90%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }     
+    }
 
 .restaurant-card-heart{
     display: flex;
@@ -53,26 +52,4 @@
     position: relative;          
     cursor: pointer;
     align-items: center;        
-}
-
-.restaurant-card-heart:hover .progress-heart, .section-menu-heart:hover .progress-heart {
-    animation: heart 400ms 100ms forwards;
-}
-
-@keyframes heart {
-    0% {
-        font-size: 0em;
-    }
-    25% {
-        font-size: 0.4em;
-    }
-    50% {
-        font-size: 0.8em;
-    }
-    75% {
-        font-size: 1.2em;
-    }
-    100%{
-        font-size: 1.6em;
-    }
 }

@@ -1,0 +1,21 @@
+.restaurant-card-heart:hover .progress-heart, .section-menu-heart:hover .progress-heart{
+    animation: heart 400ms 100ms forwards;
+}
+
+@keyframes heart {
+    0% {
+        font-size: 0em;
+    }
+    25% {
+        font-size: 0.4em;
+    }
+    50% {
+        font-size: 0.8em;
+    }
+    75% {
+        font-size: 1.2em;
+    }
+    100%{
+        font-size: 1.6em;
+    }
+}
