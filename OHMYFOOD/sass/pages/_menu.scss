@@ -66,7 +66,7 @@
 }
 
 .meal-card-1, .section-meal{
-    @include anim-meal();     
+    @include anim-meal(0ms);
 }
 .meal-card-2{
     @include anim-meal(100ms);     
@@ -124,14 +124,22 @@
     display: flex;
     flex-direction: column;
     gap: 0.625em;
+    
+}
+.section-meal-container-child{
+    display: flex;
+    width: 100%;    
 }
 
 .meal-card{
+    z-index: 2;
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: flex-end;
     padding: 0.625em 4%;    
-    max-height: 4.25em;    
+    max-height: 4.25em;
+    cursor: pointer;
+    width: 92%;
 }
 
 .meal-card-name{
@@ -165,9 +173,54 @@
             font-size: 1em;
         }    
     }
+.meal-card-price-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;     
+}
 
-.meal-card-price{    
-    align-self: flex-end;
+.check-anim{ 
+    z-index: 1;
+    position: relative;   
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width:10%;
+    max-height: 4.25em;
+    display: none;
+    background: var(--color-third);    
+}
+
+.section-meal-container-child:active .check-anim{
+    display:flex;
+    animation: check 800ms ease forwards;
+}
+@keyframes check{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 10%;
+    }    
+}
+.check-icon{
+    color: var(--color-white);
+    font-size: 0; 
+    animation: check-icon 800ms 100ms ease forwards;  
+}
+@keyframes check-icon{
+    from {
+        rotate:(0);
+        font-size: 0.5em;
+    }
+    to {
+        rotate:(-360deg);
+        font-size: 1.125em;        
+    }    
+}
+
+.meal-card-price{  
+    display: flex;    
     font-size: 0.9375em;
     font-weight: 700;
     line-height: 1.125em;

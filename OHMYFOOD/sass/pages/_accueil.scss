@@ -237,3 +237,64 @@
     font-size: 1.0625em;
     line-height: 1.25em;
 }
+
+.loader-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;    
+    width: 100%;
+    height: 100%;
+    background:var(--color-background-main);
+    opacity: 0.7;
+    animation: loader 20000ms  forwards;
+    z-index: 10;
+}
+@keyframes loader {
+    from{
+        visibility: visible;        
+    }
+    to{ 
+              
+        visibility: hidden;
+    }  
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;      
+}
+.loader-letter{
+    font-family: "shrikhand", Arial, Helvetica, sans-serif;  
+    font-size: 10em;  
+    font-weight: 700;
+}
+
+@keyframes loader-letter {
+    from{
+        transform:translateX(0px);
+    }
+    to{       
+       transform: translateX(-20px) ;
+    }
+}
+
+@mixin anim-loader ($delay:0ms){
+    animation: loader-letter 1000ms infinite $delay forwards;    
+}
+
+.loader-letter-1, .loader-letter-2, .loader-letter-3{
+    color: var(--color-main);
+    @include anim-loader (0ms)     
+}
+.loader-letter-4, .loader-letter-5, .loader-letter-6{
+    color: var(--color-second);
+    @include anim-loader (100ms)
+}
+.loader-letter-7, .loader-letter-8, .loader-letter-9{
+    color: var(--color-third);
+    @include anim-loader (200ms)
+}
