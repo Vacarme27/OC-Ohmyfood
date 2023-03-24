@@ -138,7 +138,7 @@
     background-color: var(--color-background-main);
     width: 92%;
         &-background{
-            background:var(--color-background-main);
+            background:var(--color-background-main);            
         }
         &-title{
             width: 92%;
@@ -149,10 +149,10 @@
     @media screen and (min-width:768px) {
         .section-restaurant{
             overflow: scroll;
+            margin-top: -1.25em;
                 &-title{
                     max-width: 1200px;
-                    margin: auto;
-                    margin-bottom: -1.25em;
+                    margin: auto;                    
                     padding-top: 2.5em;                              
                 }  
         }

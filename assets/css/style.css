@@ -460,11 +460,11 @@ footer {
 @media screen and (min-width: 768px) {
   .section-restaurant {
     overflow: scroll;
+    margin-top: -1.25em;
   }
   .section-restaurant-title {
     max-width: 1200px;
     margin: auto;
-    margin-bottom: -1.25em;
     padding-top: 2.5em;
   }
 }
