@@ -269,7 +269,6 @@ footer {
   }
 }
 .meal-card {
-  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -626,7 +625,6 @@ footer {
   width: 100%;
   height: 100%;
   background: var(--color-background-main);
-  opacity: 0.9;
   animation: loader 3000ms forwards;
   z-index: 10;
 }
@@ -688,12 +686,11 @@ footer {
 .loader-letter-8 {
   animation: loader-letter 1000ms ease infinite 800ms both;
 }
-.loader-letter-1 {
+.loader-letter-9 {
   animation: loader-letter 1000ms ease infinite 900ms both;
 }
 
 .check-anim {
-  z-index: 1;
   position: relative;
   display: flex;
   justify-content: center;
@@ -710,16 +707,16 @@ footer {
 }
 
 .section-meal-container-child:active .check-anim {
+  animation: check 400ms ease backwards;
   display: flex;
-  animation: check 800ms ease forwards;
 }
 
 @keyframes check {
   from {
-    transform: scaleX(0);
+    transform: translateX(30%);
   }
   to {
-    transform: scaleX(1);
+    transform: translateX(0%);
   }
 }
 .check-icon {

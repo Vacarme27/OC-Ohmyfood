@@ -21,8 +21,7 @@
             position: fixed;
             width: 100%;
             height: 100%;
-            background:var(--color-background-main);
-            opacity: 0.9;
+            background:var(--color-background-main);            
             animation: loader 3000ms forwards;
             z-index: 10;
         } 
@@ -56,7 +55,7 @@
     color: var(--color-main);    
 }
 
-.loader-letter-3,.loader-letter-4, .loader-letter-5, .loader-letter-6{
+.loader-letter-3, .loader-letter-4, .loader-letter-5, .loader-letter-6{
     color: var(--color-second);    
 }
 
@@ -88,7 +87,7 @@
     &-8{
         @include anim-loader(800ms)
     }
-    &-1{
+    &-9{
         @include anim-loader(900ms)
     }
 }

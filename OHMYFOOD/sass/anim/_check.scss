@@ -1,5 +1,4 @@
-.check-anim{ 
-    z-index: 1;
+.check-anim{    
     position: relative;   
     display: flex;    
     justify-content: center;
@@ -14,15 +13,15 @@
     border-radius:0.9375em 0em 0em 0.9375em;       
 }
 .section-meal-container-child:active .check-anim{
-    display:flex;
-    animation: check 800ms ease forwards;    
+    animation: check 400ms ease backwards;
+    display:flex;   
 }
-@keyframes check{
+@keyframes check {
     from {       
-            transform: scaleX(0)
+            transform : translateX(30%);
     }
     to {
-           transform: scaleX(1);        
+           transform : translateX(0%);        
     }
 }
 .check-icon{    
