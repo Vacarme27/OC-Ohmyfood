@@ -445,6 +445,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 3.125em 4%;
+  padding-top: 1.875em;
   background-color: var(--color-background-main);
   width: 92%;
 }
@@ -453,19 +454,17 @@ footer {
 }
 .section-restaurant-title {
   width: 92%;
-  padding: 4%;
-  padding-bottom: 0;
+  padding: 3em 4% 0 4%;
 }
 
 @media screen and (min-width: 768px) {
   .section-restaurant {
     overflow: scroll;
-    margin-top: -1.25em;
   }
   .section-restaurant-title {
     max-width: 1200px;
     margin: auto;
-    padding-top: 2.5em;
+    padding-top: 2em;
   }
 }
 .restaurant-container-card {
