@@ -273,11 +273,6 @@ footer {
   font-weight: 700;
   line-height: 1.125em;
 }
-.meal-card-price-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
 
 @media screen and (min-width: 768px) {
   .meal-card-description {

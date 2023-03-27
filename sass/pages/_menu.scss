@@ -117,11 +117,6 @@
             font-size: 0.9375em;
             font-weight: 700;
             line-height: 1.125em;
-                &-container{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;     
-                }
         }    
 }
     @media screen and (min-width:768px) {
