@@ -132,29 +132,30 @@
 /*______Section Restaurant______*/
 
 .section-restaurant{
-    display: flex;
-    flex-direction: column;    
-    padding:3.125em 4%;
-    padding-top: 1.875em;    
-    background-color: var(--color-background-main);
-    width: 92%;
-        &-background{
-            background:var(--color-background-main);            
-        }
+    background: var(--color-background-main);            
         &-title{
             width: 92%;
-            padding:3em 4% 0 4%;
-            
+            padding:3em 4% 0 4%;            
+        }
+        &-child{
+            display: flex;
+            flex-direction: column;    
+            padding:3.125em 4%;
+            padding-top: 1.875em;    
+            background-color: var(--color-background-main);
+            width: 92%;
         }
 }
     @media screen and (min-width:768px) {
-        .section-restaurant{
-            overflow: scroll;            
+        .section-restaurant{                       
                 &-title{
                     max-width: 1200px;
                     margin: auto;                    
                     padding-top: 2em;                              
-                }  
+                }
+                &-child{
+                    overflow: scroll;
+                } 
         }
     }   
 
@@ -180,7 +181,7 @@
             height: 100%;    
         }
         &-img{    
-            height: 100%;   
+            min-height: 100%;   
             object-fit: cover;
             width: 100%;        
         }
@@ -224,4 +225,4 @@
         .restaurant-card{
             min-width: 335px;
         }
-    }
+    }    

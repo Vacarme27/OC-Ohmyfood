@@ -23,11 +23,11 @@
             height: 100%;
             background:var(--color-background-main);            
             animation: loader 3000ms forwards;
-            z-index: 10;
+            z-index: 10;            
         } 
         &-letter{
             font-family: "shrikhand", Arial, Helvetica, sans-serif;  
-            font-size: 3em;  
+            font-size: 2.5em;  
             font-weight: 700;
                 &:hover{
                     animation: paused;
