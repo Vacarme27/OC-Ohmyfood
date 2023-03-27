@@ -237,8 +237,9 @@ footer {
   padding: 0.625em 4%;
   max-height: 4.25em;
   cursor: pointer;
-  width: 92%;
+  min-width: 92%;
   background: var(--color-white);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .meal-card-name {
   font-size: 1.125em;
@@ -253,6 +254,8 @@ footer {
   flex-direction: column;
   gap: 0.3125em;
   max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .meal-card-description {
   font-size: 0.9375em;
@@ -521,11 +524,13 @@ footer {
 }
 
 .progress-heart {
-  font-size: 0em;
+  font-size: 1.6em;
   background: linear-gradient(var(--color-main), var(--color-second));
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  transition: 400ms ease;
+  transform: scale(0);
 }
 
 .section-menu-heart {
@@ -536,26 +541,9 @@ footer {
 }
 
 .restaurant-card-heart:active .progress-heart, .section-menu-heart:active .progress-heart {
-  animation: heart 300ms 100ms forwards;
+  transform: scale(1);
 }
 
-@keyframes heart {
-  0% {
-    font-size: 0em;
-  }
-  25% {
-    font-size: 0.4em;
-  }
-  50% {
-    font-size: 0.8em;
-  }
-  75% {
-    font-size: 1.2em;
-  }
-  100% {
-    font-size: 1.6em;
-  }
-}
 .meal-card-1, .section-meal-container {
   animation: meal 1000ms 0ms both;
 }
@@ -697,43 +685,31 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  min-width: 10%;
+  padding: 4%;
   max-height: 4.25em;
-  display: none;
   background: var(--color-third);
+  transition: 300ms ease;
+  transform: translate(30px) scale(0);
 }
 
 .section-meal-container-child:active .meal-card {
-  width: 82%;
+  min-width: 74%;
   border-radius: 0.9375em 0em 0em 0.9375em;
 }
 
 .section-meal-container-child:active .check-anim {
-  animation: check 400ms ease backwards;
-  display: flex;
+  transform: translate(0) scale(1);
 }
 
-@keyframes check {
-  from {
-    transform: translateX(30%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
 .check-icon {
   color: var(--color-white);
   font-size: 1.125em;
-  animation: check-icon 800ms 100ms ease forwards;
+  transition: 800ms ease;
 }
 
-@keyframes check-icon {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
+.section-meal-container-child:active .check-icon {
+  transform: rotate(-360deg);
 }
 
 /*# sourceMappingURL=style.css.map */

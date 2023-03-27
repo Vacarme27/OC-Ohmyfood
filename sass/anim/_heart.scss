@@ -8,7 +8,7 @@
     bottom: 3em;
     cursor: pointer;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
 }
     @media screen and (min-width:768px){
         .restaurant-card-heart{
@@ -25,38 +25,22 @@
 }
 
 .progress-heart {
-    font-size: 0em;
+    font-size: 1.6em;
     background: linear-gradient(var(--color-main),var(--color-second));
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    transition: 400ms ease;
+    transform: scale(0);    
 }
 
 .section-menu-heart{
     display: flex;
     position: relative;
     cursor: pointer;
-    align-items: center;
+    align-items: center;         
 }
 
 .restaurant-card-heart:active .progress-heart, .section-menu-heart:active .progress-heart{
-    animation: heart 300ms 100ms forwards;
-}
-
-@keyframes heart {
-    0% {
-        font-size: 0em;
-    }
-    25% {
-        font-size: 0.4em;
-    }
-    50% {
-        font-size: 0.8em;
-    }
-    75% {
-        font-size: 1.2em;
-    }
-    100%{
-        font-size: 1.6em;
-    }
+    transform: scale(1);
 }
