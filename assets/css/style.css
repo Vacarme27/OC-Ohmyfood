@@ -70,6 +70,7 @@
   margin: 0.938em 0em;
   width: 11.69em;
   align-self: center;
+  text-align: center;
 }
 .button-main:hover {
   opacity: 90%;
@@ -722,18 +723,16 @@ footer {
 }
 .check-icon {
   color: var(--color-white);
-  font-size: 0;
+  font-size: 1.125em;
   animation: check-icon 800ms 100ms ease forwards;
 }
 
 @keyframes check-icon {
   from {
-    rotate: 0;
-    font-size: 0.5em;
+    transform: rotate(0);
   }
   to {
-    rotate: -360deg;
-    font-size: 1.125em;
+    transform: rotate(-360deg);
   }
 }
 

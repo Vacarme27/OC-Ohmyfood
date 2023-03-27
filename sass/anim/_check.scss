@@ -26,16 +26,14 @@
 }
 .check-icon{    
     color: var(--color-white);
-    font-size: 0; 
+    font-size: 1.125em; 
     animation: check-icon 800ms 100ms ease forwards;     
 }
 @keyframes check-icon{
     from {
-        rotate:(0);
-        font-size: 0.5em;
+        transform :rotate(0);
     }
     to {
-        rotate:(-360deg);
-        font-size: 1.125em;        
+        transform :rotate(-360deg);               
     }    
 }
