@@ -9,10 +9,10 @@
     background: var(--color-third);
     transition: 400ms ease;
     transform-origin:0%;
-    transform:scaleX(0%);
+    transform:scaleX(0);
 }
 .section-meal-container-child:active .meal-card{
-    transform: scaleX(60px);
+    transform: scaleX(1);
     min-width: 74%;
     border-radius:0.9375em 0em 0em 0.9375em;
 }
